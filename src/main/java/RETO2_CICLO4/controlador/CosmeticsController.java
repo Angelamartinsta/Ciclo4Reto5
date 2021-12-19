@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author ander
  */
 @RestController
-@RequestMapping("/api/accessory")
+@RequestMapping("/api/cosmetics")
 @CrossOrigin("*")
 public class CosmeticsController {
     
