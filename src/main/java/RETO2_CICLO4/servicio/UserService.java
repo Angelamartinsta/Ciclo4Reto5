@@ -46,7 +46,9 @@ public class UserService {
         Optional<User> e = userRepository.getUser(user.getId());
         if (!e.isPresent()) {
             if (emailExists(user.getEmail())==false){
-                return userRepository.create(user);
+                userRepository.create(user);
+                return user;
+                    
             }else{
                 return user;
             }
